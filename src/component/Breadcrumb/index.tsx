@@ -2,8 +2,10 @@ import React from 'react';
 import { TextRegular } from '../TextHeading';
 import { theme } from '../../global/styles/theme';
 import { BreadcrumbProps, Container } from './styles';
+import { IVehicle } from '../../hooks/context';
 
 export interface IParams extends BreadcrumbProps{
+  vehicleData?: IVehicle;
   titleBreadcrumb: string;
   vehicleBreadcrumb?: string;
   brandBreadcrumb?: string;
@@ -23,10 +25,10 @@ export function Breadcrumb({
   return (
     <Container {...rest}>
         <TextRegular fontSize={18} color={theme.colors.primary} outline>
-            {titleBreadcrumb} {'> '} 
-            {vehicleBreadcrumb} {'> '}   
-            {brandBreadcrumb} {'> '} 
-            {modelBreadcrumb} {'> '}  
+            {titleBreadcrumb ? titleBreadcrumb + '>' : ''} 
+            {vehicleBreadcrumb ? vehicleBreadcrumb + '>' : ''} 
+            {brandBreadcrumb ? brandBreadcrumb + '>' : ''} 
+            {modelBreadcrumb ? modelBreadcrumb + '>' : ''}
             {yearBreadcrumb}
         </TextRegular>
     </Container>

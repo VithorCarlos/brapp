@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vithor/development/github.com/brapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
+            "outputFile": "/home/vithor/development/github.com/Brapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "/home/vithor/.gradle/caches/transforms-2/files-2.1/9f1ad3d8fb56b5dd9aeb72fdc6f82652/core-1.5.0/res/values-sw/values-sw.xml",

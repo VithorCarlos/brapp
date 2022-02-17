@@ -7,13 +7,13 @@ export const Content = styled(View)`
     margin-left: 23px;
     margin-right: 10px;
     flex: 1;
-    
     `;
 
 export const VehicleYear = styled(View)`
     margin-top: 25px;
-    
-    `;
+
+  `;
+
 export const Footer = styled(View)`
   margin-top: 50px;
   margin-horizontal: 38px;
@@ -22,4 +22,5 @@ export const Footer = styled(View)`
   align-items: center;
   align-self: center;
   justify-content: space-between;
+  
 `;

@@ -4,12 +4,14 @@ import styled from "styled-components";
 
 export const Container = styled(View)`
     flex: 1;
-    margin-horizontal: 16px
+    margin-horizontal: 16px;
+    
 `;
 
 export const Content = styled(View)`
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     margin-top: 52px;
 `;
 

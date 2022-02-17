@@ -8,34 +8,23 @@ import {
 import { TextBold } from '../TextHeading';
 import { Content } from './styles';
 
-
 interface Props extends TouchableOpacityProps {
     title: string;
     icon: React.FC<SvgProps>;
-    select?: boolean;
-    selected?: (select: boolean) => void;
-    setVehicle?: (title: string) => void;
+    selected?: boolean;
 }
 
 export function Category({ 
     title, 
-    setVehicle, 
     icon: Icon,
+    selected,
      ...rest
 }: Props){
-         
-    const [toggle, setToggle] = useState(false);
-    
+
     return (
     <View>
-        <TouchableOpacity
-            onPress={() => {
-                setVehicle(title)
-                setToggle(!toggle)
-            }}
-            {...rest}
-        >
-            <Content toggle={toggle}>
+        <TouchableOpacity {...rest} >
+            <Content toggle={selected}>
                 <Icon width={50} height={50}/>
                 <TextBold fontSize={15}>{title}</TextBold>
             </Content>
