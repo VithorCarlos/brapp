@@ -40,7 +40,7 @@ export function VehicleModel(){
     
     
     useEffect(()=>{    
-      if ( model !== undefined){
+      if ( model !== ''){
         setDisabled(false)
       } else {
         setDisabled(true)
