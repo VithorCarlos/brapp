@@ -55,7 +55,7 @@ export function YearVehicle() {
 
 
   useEffect(() => {
-    if (year !== undefined) {
+    if (year !== '') {
       setDisabled(false)
     } else {
       setDisabled(true)

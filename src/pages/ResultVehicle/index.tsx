@@ -53,11 +53,6 @@ export function ResultVehicle() {
         )
     }
 
-    async function fetchCopyText(){
-        const text = await Clipboard.setString();
-        setCopyText(text);
-    }
-
     return (
         <Background>
             <Breadcrumb

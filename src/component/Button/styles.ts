@@ -7,7 +7,7 @@ interface Props {
     disabled?: boolean;
 }
 
-const { primary, primary_disabled } = theme.colors;
+const {  primary_disabled } = theme.colors;
 
 export const ButtonAction = styled(TouchableOpacity)`
     flex-direction: row;

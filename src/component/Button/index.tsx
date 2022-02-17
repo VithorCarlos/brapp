@@ -12,16 +12,16 @@ interface Props extends TouchableOpacityProps{
     background: string;
 }
 
-export function Button({  children, background, ...rest}: Props){
+export function Button({  children, background, ...rest }: Props){
   return (
-    <View>
-        <ButtonAction 
+
+        <ButtonAction
             activeOpacity={0.7}
             backgroundColor={background}
             {...rest}
         >
             {children}
         </ButtonAction>
-    </View>
+    
   );
 }
