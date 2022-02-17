@@ -11,24 +11,16 @@ import { Content } from './styles';
 
 interface Props extends TouchableOpacityProps {
     title: string;
-    selected?:boolean;
     color?: string;
-    setData?: (title: string) => void;
+    setData?: (title: any) => void;
+    selected?: boolean;
 }
 
 export function ButtonAdd({ title, setData, color, selected = false, ...rest}: Props){
-
-    const [toggle, setToggle] = useState(false);
   return (
     <View>
-        <TouchableOpacity
-            onPress={() => {
-                setData(title)
-                setToggle(!toggle)
-            }}
-            {...rest}
-        >
-            <Content toggle={toggle}>
+        <TouchableOpacity {...rest}>
+            <Content toggle={selected}>
                 <TextBold color={color} fontSize={15}>{title}</TextBold>
             </Content>
         </TouchableOpacity>

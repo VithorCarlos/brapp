@@ -9,7 +9,6 @@ export const Container = styled(View)`
 
 export const ModelVehicle = styled(View)`
     margin-top: 20px;
-    
 `;
 
 export const Footer = styled(View)`
