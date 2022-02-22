@@ -21,8 +21,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'brapp' do
-  # Pods for brapp
+target 'BRApp' do
+  # Pods for BRApp
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -56,7 +56,7 @@ target 'brapp' do
 
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
-  target 'brappTests' do
+  target 'BRAppTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -73,10 +73,10 @@ target 'brapp' do
   end
 end
 
-target 'brapp-tvOS' do
-  # Pods for brapp-tvOS
+target 'BRApp-tvOS' do
+  # Pods for BRApp-tvOS
 
-  target 'brapp-tvOSTests' do
+  target 'BRApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
