@@ -18,6 +18,10 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+/**
+ * Run Proguard to shrink the Java bytecode in release builds.
+ */
+
 
 allprojects {
     repositories {

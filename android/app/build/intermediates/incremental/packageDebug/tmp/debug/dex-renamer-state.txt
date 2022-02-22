@@ -1,4 +1,0 @@
-#Wed Feb 16 15:49:33 BRT 2022
-base.0=/home/vithor/development/github.com/Brapp/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
